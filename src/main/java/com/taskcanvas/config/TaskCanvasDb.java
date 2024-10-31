@@ -1,2 +1,4 @@
-package com.taskcanvas.config;public class TaskCanvasDb {
+package com.taskcanvas.config;
+
+public class TaskCanvasDb {
 }

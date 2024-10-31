@@ -1,2 +1,12 @@
-package com.taskcanvas.usecase;public class getUserById {
+package com.taskcanvas.usecase;
+
+import com.taskcanvas.port.UserPort;
+
+public class getUserById {
+    private final UserPort userPort;
+
+    public getUserById(UserPort userPort) {
+        this.userPort = userPort;
+    }
 }
+
