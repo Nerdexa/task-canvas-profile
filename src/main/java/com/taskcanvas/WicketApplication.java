@@ -1,8 +1,9 @@
 package com.taskcanvas;
 
+import com.taskcanvas.web.HomePage;
+import com.taskcanvas.web.ProfilePage;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
-import com.taskcanvas.ProfilePage;
 
 /**
  * Application object for your web application.

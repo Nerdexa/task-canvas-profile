@@ -1,3 +1,5 @@
-com/taskcanvas/HomePage.class
-com/taskcanvas/ProfilePage.class
+com/taskcanvas/domain/User.class
+com/taskcanvas/web/HomePage.class
+com/taskcanvas/web/ProfilePage.class
+com/taskcanvas/gateway/UserGateway.class
 com/taskcanvas/WicketApplication.class
