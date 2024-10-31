@@ -2,6 +2,7 @@ package com.taskcanvas;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
+import com.taskcanvas.ProfilePage;
 
 /**
  * Application object for your web application.
@@ -27,6 +28,8 @@ public class WicketApplication extends WebApplication
 	public void init()
 	{
 		super.init();
+
+		mountPage("/profile", ProfilePage.class);
 
 		// add your configuration here
 	}
