@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.taskcanvas.TestHomePage" time="0.159" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.taskcanvas.TestHomePage" time="0.169" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Users/kame/.sdkman/candidates/java/8.0.422-zulu/zulu-8.jdk/Contents/Home/jre/lib"/>
@@ -66,5 +66,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.taskcanvas.TestHomePage" name="homepageRendersSuccessfully" time="0.159"/>
+  <testcase classname="com.taskcanvas.TestHomePage" name="homepageRendersSuccessfully" time="0.169"/>
 </testsuite>
