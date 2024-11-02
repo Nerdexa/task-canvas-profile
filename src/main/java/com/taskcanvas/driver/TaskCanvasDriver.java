@@ -16,13 +16,8 @@ public class TaskCanvasDriver {
 
     public UserJson getUserById(UUID id) throws Exception {
         Statement statement = connection.createStatement();
-        String SQL = "SELECT * FROM users WHERE id = " + id.toString();
-        ResultSet result = statement.executeQuery(SQL);
-
-        if (result.next()) {
-            return new UserJson(UUID.fromString(result.getString("id")), result.getString("mail_address"));
-        } else {
-            return null;
-        }
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM task_canvas.user WHERE id = '" + id + "'");
+        resultSet.next();
+        return new UserJson(UUID.fromString(resultSet.getString("id")), resultSet.getString("email"));
     }
 }
