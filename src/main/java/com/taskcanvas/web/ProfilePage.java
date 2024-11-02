@@ -12,13 +12,21 @@ import org.apache.wicket.request.mapper.parameter.PageParameters;
 import java.sql.Connection;
 import java.util.UUID;
 
-public class ProfilePage extends  WebPage {
+public class ProfilePage extends WebPage {
 
     public ProfilePage(PageParameters parameters) {
         super(parameters);
         String idParam = parameters.get("userId").toString();
         Label errorLabel = new Label("error", "ユーザーが見つかりませんでした");
+        errorLabel.setOutputMarkupId(true);
         add(errorLabel);
+
+        add(new Label("mailAddress", ""));
+        add(new Label("age", ""));
+        add(new Label("gender", ""));
+        add(new Label("address", ""));
+        add(new Label("hobby", ""));
+        add(new Label("introduction", ""));
 
         try {
             Connection connection = new TaskCanvasDb().connect();
@@ -29,16 +37,15 @@ public class ProfilePage extends  WebPage {
             GetUserById getUserById = new GetUserById(userGateway);
             User user = getUserById.execute(userId);
 
-            System.out.println(user);
-
-            add(new Label("mailAddress", "test@test.com"));
-            add(new Label("age", "25"));
-            add(new Label("gender", "男"));
-            add(new Label("address", "東京都港区"));
-            add(new Label("hobby", "読書"));
-            add(new Label("introduction", "こんにちは、山田太郎です。"));
+            ((Label) get("mailAddress")).setDefaultModelObject(user.getMailAddress());
+            ((Label) get("age")).setDefaultModelObject("25");
+            ((Label) get("gender")).setDefaultModelObject("男");
+            ((Label) get("address")).setDefaultModelObject("東京都港区");
+            ((Label) get("hobby")).setDefaultModelObject("読書");
+            ((Label) get("introduction")).setDefaultModelObject("こんにちは、山田太郎です。");
         } catch (Exception e) {
             errorLabel.setVisible(true);
+            System.out.println(e);
         }
     }
 }
