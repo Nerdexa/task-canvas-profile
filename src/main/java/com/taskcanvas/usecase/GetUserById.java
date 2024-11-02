@@ -14,4 +14,3 @@ public class GetUserById {
         return userPort.getUserById(id);
     }
 }
-
