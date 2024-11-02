@@ -16,9 +16,8 @@ public class UserGateway implements UserPort {
     }
 
     public User getUserById(User.Id id) throws Exception {
-        UUID userId = UUID.fromString(id.toString());
-        UserJson userJson =  taskCanvasDriver.getUserById(userId);
+        UUID userId = id.getValue();
+        UserJson userJson = taskCanvasDriver.getUserById(userId);
         return new User(UUID.fromString(String.valueOf(userJson.getId())), userJson.getMailAddress());
     }
-
 }
