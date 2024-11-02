@@ -1,3 +1,10 @@
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/web/ProfilePage.java
 /Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/WicketApplication.java
-/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/HomePage.java
-/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/ProfilePage.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/port/UserPort.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/gateway/UserGateway.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/config/TaskCanvasDb.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/usecase/GetUserById.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/driver/entity/UserJson.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/driver/TaskCanvasDriver.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/web/HomePage.java
+/Users/kame/kame/task-canvas-profile/src/main/java/com/taskcanvas/domain/User.java

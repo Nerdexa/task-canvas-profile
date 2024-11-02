@@ -30,7 +30,7 @@ public class WicketApplication extends WebApplication
 	{
 		super.init();
 
-		mountPage("/profile", ProfilePage.class);
+		mountPage("/profile/${userId}", ProfilePage.class);
 
 		// add your configuration here
 	}

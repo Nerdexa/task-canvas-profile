@@ -1,5 +1,11 @@
+com/taskcanvas/usecase/GetUserById.class
 com/taskcanvas/web/HomePage.class
 com/taskcanvas/gateway/UserGateway.class
+com/taskcanvas/driver/TaskCanvasDriver.class
+com/taskcanvas/driver/entity/UserJson.class
+com/taskcanvas/config/TaskCanvasDb.class
+com/taskcanvas/domain/User$Id.class
 com/taskcanvas/domain/User.class
 com/taskcanvas/web/ProfilePage.class
+com/taskcanvas/port/UserPort.class
 com/taskcanvas/WicketApplication.class

@@ -92,7 +92,17 @@
 			<version>${jetty9.version}</version>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.34</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.4</version>
+		</dependency>
 		<!-- uncomment if WebSocket support is needed
 		<dependency>
 			<groupId>org.eclipse.jetty.websocket</groupId>
